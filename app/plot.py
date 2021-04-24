@@ -8,7 +8,7 @@ import plotly.graph_objects as go
 st.title('Status of Survey about Campaigns of Tirupati PC Elections')
 st.write("It shows ***PC level analysis*** in Tirupati PC")
 st.sidebar.title("Selector")
-image = Image.open("PC.jpg")
+image = Image.open("app/PC.jpg")
 st.image(image,use_column_width=False)
 st.markdown('<style>body{background-color: lightblue;}Survey</style>',unsafe_allow_html=True)
 #container=st.beta_container()
@@ -17,7 +17,7 @@ st.markdown("## **Actual data of survey**")
 #Reading data from CSV file using Pandas
 @st.cache
 def load_data():
-    Survey_data = pd.read_csv("Survey_5_Responses .csv")
+    Survey_data = pd.read_csv("app/Survey_5_Responses .csv")
     return Survey_data
 
 Survey_data = load_data()
