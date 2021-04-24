@@ -50,7 +50,7 @@ st.write(selected_state)
 
 
 #Extracted Data of call responded in Survey from CSV file under a specific constituency and Mandal which were selected in dropdowns
-st.markdown("## **Data of responded**")
+#st.markdown("## **Data of responded**")
 respond_data = selected_state[selected_state['Status of the call']=='Call responded']
 #st.write(respond_data)
 
